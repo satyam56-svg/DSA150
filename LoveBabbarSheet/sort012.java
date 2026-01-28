@@ -1,39 +1,39 @@
-package LoveBabbarSheet;
+// package LoveBabbarSheet;
 
-public class sort012 {
-    public static void swap(int arr[], int i, int j) {
-        int temp=arr[i];
-        arr[i]=arr[j];
-        arr[j]=temp;
-    }
+// public class sort012 {
+//     public static void swap(int arr[], int i, int j) {
+//         int temp=arr[i];
+//         arr[i]=arr[j];
+//         arr[j]=temp;
+//     }
     
-    public static void sort012(int[] arr) {
-        int low = 0, mid = 0, high = arr.length - 1;
-        while(mid <= high) {
-            if(arr[mid] == 0) {
-                swap(arr, low, mid);
-                low++;
-                mid++;
-            }
-            else if(arr[mid] == 1) {
-                mid++;
-            }
-            else { // nums[mid] == 2
-                swap(arr, mid, high);
-                high--;
-            }
-        }
-    }
+//     public static void sort012(int[] arr) {
+//         int low = 0, mid = 0, high = arr.length - 1;
+//         while(mid <= high) {
+//             if(arr[mid] == 0) {
+//                 swap(arr, low, mid);
+//                 low++;
+//                 mid++;
+//             }
+//             else if(arr[mid] == 1) {
+//                 mid++;
+//             }
+//             else { // nums[mid] == 2
+//                 swap(arr, mid, high);
+//                 high--;
+//             }
+//         }
+//     }
 
-    public static void printArray(int arr[]) {
-        for(int i=0; i<arr.length; i++) {
-            System.out.print(arr[i]+" ");
-        }
-    }
+//     public static void printArray(int arr[]) {
+//         for(int i=0; i<arr.length; i++) {
+//             System.out.print(arr[i]+" ");
+//         }
+//     }
 
-    public static void main(String[] args) {
-        int arr[]={0,1,2,0,1,2};
-        sort012(arr);
-        printArray(arr);
-    }
-}
+//     public static void main(String[] args) {
+//         int arr[]={0,1,2,0,1,2};
+//         sort012(arr);
+//         printArray(arr);
+//     }
+// }
